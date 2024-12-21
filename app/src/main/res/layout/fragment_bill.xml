@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.BillFragment">
+
+    <!-- Danh sách Bill -->
+    <ListView
+        android:id="@+id/listViewBill"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+    <!-- TextView để hiển thị tổng tiền -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tổng tiền: 0 VND"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="end"/>
+
+    <!-- Nút Thanh toán -->
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán"
+        android:background="#4CAF50"
+        android:textSize="18sp"/>
+
+</LinearLayout>
